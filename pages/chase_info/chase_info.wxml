@@ -1,0 +1,56 @@
+<template name="n">
+    <view class="txt-center flex1 font1 {{item.color}}" wx:for="{{zh}}" wx:key="key">{{item.val}}</view>
+</template>
+<template name="y">
+    <view class="txt-center flex1">
+        <button bindtap="buyChase" data-id="{{qs}}" size="mini" style="background: #fc4646;margin-top:10rpx;" type="warn">订阅第{{qs}}期追号计划</button>
+    </view>
+</template>
+<scroll-view class="nav" scrollWithAnimation="true" scrollX="true">
+    <text bindtap="navClick" class="{{play_id==item.play_id?'active':''}}" data-id="{{item.play_id}}" wx:for="{{play_list}}" wx:key="key">{{item.name}}</text>
+</scroll-view>
+<import src="../../common/common.wxml"></import>
+<scroll-view scrollY bindscrolltoupper="refresh" scrollTop="{{scrollTop}}" style="height: {{height}}rpx;">
+    <view class="cont">
+        <template is="isHideRefer" data="{{isHideRefer:isHideRefer}}"></template>
+        <view class="flex">
+            <view class="date">期数</view>
+            <view class="num">开奖号码</view>
+            <view class="result">结果</view>
+        </view>
+        <block wx:for="{{list}}" wx:key="id">
+            <view class="flex grey-bg">
+                <view class="date font1">{{item.qs}}</view>
+                <view class="num font1">{{item.result}}</view>
+                <view class="result font1">
+                    <button size="mini" style="{{item.style}}height:60rpx; line-height:60rpx; width:150rpx; margin-top:10rpx;" type="warn">{{item.text}}</button>
+                </view>
+            </view>
+            <view class="flex2 min-height">
+                <template is="{{item.buy}}" data="{{...item}}"></template>
+            </view>
+        </block>
+        <view class="flex yellow-bg">
+            <view class="date font1">数据统计</view>
+        </view>
+        <view class="flex border">
+            <view class="date font1">统计类型</view>
+            <view class="num font1">次数</view>
+            <view class="result font1">概率</view>
+        </view>
+        <view class="flex border">
+            <view class="date font1">中奖</view>
+            <view class="num font1">
+                <text class="color-red">{{zh_result.cg}}</text>次</view>
+            <view class="result font1">
+                <text class="color-red">{{zh_result.cg_bl}}</text>%</view>
+        </view>
+        <view class="flex border">
+            <view class="date font1">错误</view>
+            <view class="num font1">
+                <text class="color-red">{{zh_result.sb}}</text>次</view>
+            <view class="result font1">
+                <text class="color-red">{{zh_result.sb_bl}}</text>%</view>
+        </view>
+    </view>
+</scroll-view>

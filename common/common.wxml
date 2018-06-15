@@ -1,0 +1,25 @@
+<template name="weihu">
+    <view class="wux-prompt__empty">
+        <view class="wux-prompt__bd">
+            <image class="wux-prompt__icon" src="../../images/weihu.png"></image>
+            <view class="wux-prompt__text">系统升级中，请稍后！</view>
+        </view>
+    </view>
+</template>
+<template name="LoadMore">
+    <view class="weui-loadmore" hidden="{{isHideMore}}" style="height:90rpx;">
+        <button bindtap="loadmore" disabled="{{isHideLoadMore}}" hoverClass="other-button-hover" loading="{{isHideLoadMore}}" style="margin:20rpx;height:70rpx;line-height:2.5em;font-size:11pt" type="default"> 加载更多 </button>
+    </view>
+</template>
+<template name="isHideRefer">
+    <view class="weui-refer" hidden="{{isHideRefer}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在刷新</view>
+    </view>
+</template>
+<template name="isHideLoadMore">
+    <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+</template>

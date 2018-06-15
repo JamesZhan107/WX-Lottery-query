@@ -1,0 +1,15 @@
+.cont {
+    padding: 30rpx 40rpx;
+}
+
+.font1 {
+    font-size: 30rpx;
+}
+
+.mar-top {
+    margin-top: 40rpx;
+}
+
+.mar-top2 {
+    margin-top: 30rpx;
+}

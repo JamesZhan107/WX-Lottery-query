@@ -1,0 +1,90 @@
+@import "../../common/common.wxss";
+
+.nav {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 84rpx;
+    line-height: 79rpx;
+    border-bottom: 1rpx #e2e2e2 solid;
+    background: #fff;
+    white-space: nowrap;
+}
+
+.nav text {
+    margin: 0 30rpx;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav .active {
+    color: #e64340;
+    border-bottom: 4rpx #e64340 solid;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    height: 80rpx;
+    line-height: 80rpx;
+    flex-wrap: wrap;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80rpx;
+    flex-wrap: wrap;
+}
+
+.min-height {
+    min-height: 80rpx;
+}
+
+.date {
+    width: 250rpx;
+    text-align: center;
+}
+
+.num {
+    width: 240rpx;
+    text-align: center;
+}
+
+.result {
+    width: 150rpx;
+    text-align: center;
+    margin-right: 20rpx;
+}
+
+.font1 {
+    font-size: 30rpx;
+}
+
+.grey-bg {
+    background: #f2f2f2;
+    border-bottom: 1rpx solid #dfdfdf;
+    border-top: 1rpx solid #dfdfdf;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.flex1 {
+    flex: 1;
+    min-width: 50%;
+}
+
+.color-red {
+    color: #f42837;
+}
+
+.yellow-bg {
+    background: #ef4f3a;
+    color: #fff;
+}
+
+.border {
+    border-bottom: 1rpx solid #dfdfdf;
+}

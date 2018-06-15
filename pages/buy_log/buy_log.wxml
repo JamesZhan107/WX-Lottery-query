@@ -1,0 +1,27 @@
+<view class="cont">
+    <view class="flex grey-bg">
+        <view class="date">彩种</view>
+        <view class="num">玩法</view>
+        <view class="result">状态</view>
+    </view>
+    <view class="flex2 border" wx:for="{{list}}" wx:key="id">
+        <view class="date font1 mar1">
+            <view class="line-h">{{item.lottery}}</view>
+            <view class="font2">第{{item.qs}}期</view>
+        </view>
+        <view class="num font1">{{item.play}}</view>
+        <view class="result font1">
+            <button bindtap="orderLog" data-result="{{item.result}}" size="mini" style="{{item.style}} height:60rpx; line-height:60rpx;  margin-top:26rpx;" type="warn">{{item.text}}</button>
+        </view>
+    </view>
+</view>
+<view class="weui-mask weui-animate-fade-in" wx:if="{{showModal}}"></view>
+<view class="weui-dialog weui-animate-fade-in" wx:if="{{showModal}}">
+    <view class="weui-dialog__hd">
+        <text class="weui-dialog__title">订阅号码</text>
+    </view>
+    <view class="weui-dialog__bd {{item.color}}" wx:for="{{log}}" wx:key="id">{{item.val}}</view>
+    <view bindtap="coloseDialog" class="weui-dialog__ft">
+        <text class="weui-dialog__btn weui-dialog__btn_primary">确定</text>
+    </view>
+</view>

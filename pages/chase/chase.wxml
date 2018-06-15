@@ -1,0 +1,29 @@
+<view class="padding3" wx:if="{{!userinfo}}">
+    <button bindgetuserinfo="login" openType="getUserInfo" type="default">点击登录</button>
+</view>
+<view class="box padding1" wx:if="{{userinfo.status==1}}">
+    <view class="flex2">
+        <view class="fl-lf">
+            <image src="{{userinfo.avatarUrl}}"></image>
+        </view>
+        <view class="fl-lf mar-top1">
+            <view>积分</view>
+            <view>
+                <text class="color-red" style="font-size:40rpx;">{{userinfo.money}}</text>
+                <text style="font-size:26rpx;"></text>
+            </view>
+        </view>
+    </view>
+    <view class="button flex1">
+        <button bindtap="goTorecharge" style="height:70rpx; line-height: 70rpx; width:180rpx; background:#00cc99; font-size:32rpx;" type="primary">充值</button>
+    </view>
+</view>
+<view bindtap="goTochase" class="flex white-bg" data-id="{{item.id}}" hover="true" hoverClass="news_list_click" wx:for="{{list}}" wx:key="id">
+    <view class="date font1">{{item.name}}</view>
+    <view class="num font1">10期中{{item.total_zj}}</view>
+    <view class="result font1">
+        <button size="mini" style="background: #fc4646; height:60rpx; line-height:60rpx; width:210rpx; margin-top:16rpx;" type="warn">追号计划</button>
+    </view>
+</view>
+<import src="../../common/common.wxml"></import>
+<template is="weihu" data wx:if="{{userinfo.status==0}}"></template>

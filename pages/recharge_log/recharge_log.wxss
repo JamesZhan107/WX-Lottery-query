@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding-left: 16rpx;
+    padding-right: 10rpx;
+    text-align: center;
+}
+
+.grey-bg {
+    background: #f2f2f2;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.font1 {
+    font-size: 30rpx;
+}
+
+.border {
+    border-bottom: 1rpx solid #dfdfdf;
+}
+
+.font-bold {
+    font-weight: bold;
+}

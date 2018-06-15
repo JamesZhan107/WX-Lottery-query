@@ -1,0 +1,11 @@
+<view class="grey-bg">{{info}}</view>
+<view class="cont">
+    <view class="mar" wx:for="{{list}}" wx:key="keys">
+        <view class="mar-b">第{{item.qs}}期 {{item.time}}</view>
+        <view>
+            <view class="num-{{item.color}}" wx:for="{{item.result}}">{{item.val}}</view>
+        </view>
+    </view>
+</view>
+<import src="../../common/common.wxml"></import>
+<template is="isHideLoadMore" data="{{isHideLoadMore:isHideLoadMore}}"></template>

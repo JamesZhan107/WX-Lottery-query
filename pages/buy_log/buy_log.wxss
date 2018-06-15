@@ -1,0 +1,188 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding-left: 16rpx;
+    padding-right: 10rpx;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    height: 112rpx;
+    line-height: 112rpx;
+    padding-left: 16rpx;
+    padding-right: 10rpx;
+}
+
+.date {
+    width: 240rpx;
+    text-align: center;
+}
+
+.num {
+    width: 200rpx;
+    text-align: center;
+}
+
+.result {
+    width: 150rpx;
+    text-align: center;
+    margin-right: 20rpx;
+}
+
+.font1 {
+    font-size: 30rpx;
+}
+
+.grey-bg {
+    background: #f2f2f2;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.yellow-bg {
+    background: #ef4f3a;
+    color: #fff;
+}
+
+.border {
+    border-bottom: 1rpx solid #dfdfdf;
+}
+
+.mar1 {
+    line-height: 88rpx;
+    margin-top: 34rpx;
+}
+
+.line-h {
+    line-height: 0;
+}
+
+.font2 {
+    font-size: 10pt;
+    color: #aaaaaa;
+}
+
+.weui-mask {
+    background: rgba(0,0,0,.6);
+}
+
+.weui-mask,.weui-mask_transparent {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.weui-animate-fade-in {
+    animation: c ease .3s forwards;
+}
+
+.weui-dialog {
+    position: fixed;
+    z-index: 5000;
+    width: 80%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    text-align: center;
+    border-radius: 6rpx;
+    overflow: hidden;
+}
+
+.weui-dialog__hd {
+    padding: 1.3em 1.6em .5em;
+}
+
+.weui-dialog__title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.weui-dialog__bd {
+    padding: 0 1.6em .8em;
+    min-height: 40rpx;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #999;
+}
+
+.weui-dialog__bd:first-child {
+    padding: 2.7em 40rpx 1.7em;
+    color: #353535;
+}
+
+.weui-dialog__ft {
+    position: relative;
+    line-height: 96rpx;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.weui-dialog__ft:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 2rpx;
+    border-top: 2rpx solid #d5d5d6;
+    color: #d5d5d6;
+    transform-origin: 0 0;
+    transform: scaleY(.5);
+}
+
+.weui-dialog__btn {
+    display: block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    color: #3cc51f;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    position: relative;
+}
+
+.weui-dialog__btn:active {
+    background-color: #eee;
+}
+
+.weui-dialog__btn:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rpx;
+    bottom: 0;
+    border-left: 2rpx solid #d5d5d6;
+    color: #d5d5d6;
+    transform-origin: 0 0;
+    transform: scaleX(.5);
+}
+
+.weui-dialog__btn:first-child:after {
+    display: none;
+}
+
+.weui-dialog__btn_primary {
+    color: #0bb20c;
+}
+
+.color-red {
+    color: #f42837;
+}

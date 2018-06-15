@@ -1,0 +1,6 @@
+<view class="padding3">
+  <view class='curved_box' bindtap="previewImage">
+    <image src="https://up-1254176432.cos.ap-shanghai.myqcloud.com/ds.jpg"></image>
+  </view>
+   <text class='tects'>长按二维码另存图片，打开扫一扫点击右上角┇标志，从相册选取二维码即可付款</text>
+</view>

@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/lottery/lottery",
+        "pages/lottery_info/lottery_info",
+        "pages/help/help",
+        "pages/recharge/recharge",
+        "pages/chase/chase",
+        "pages/chase_info/chase_info",
+        "pages/my/my",
+        "pages/buy_log/buy_log",
+        "pages/recharge_log/recharge_log",
+        "pages/web-view/web-view"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f42837",
+        "navigationBarTitleText": "首页",
+        "navigationBarTextStyle": "#fff",
+        "backgroundColor": "#eee"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/lottery/lottery",
+                "text": "开奖",
+                "iconPath": "images/kj.png",
+                "selectedIconPath": "images/kjon.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "打赏",
+                "iconPath": "images/my.png",
+                "selectedIconPath": "images/myon.png"
+            }
+        ],
+        "selectedColor": "#e64340"
+    }
+}

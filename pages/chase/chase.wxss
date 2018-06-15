@@ -1,0 +1,120 @@
+@import "../../common/common.wxss";
+
+page {
+    background: #f2f2f2;
+}
+
+.box {
+    display: flex;
+    background: #fff;
+}
+
+.padding1 {
+    padding: 15rpx 15rpx 15rpx 40rpx;
+}
+
+.padding3 {
+    padding: 15rpx 15rpx 15rpx 15rpx;
+    background: #fff;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.box image {
+    width: 112rpx;
+    height: 112rpx;
+    border-radius: 100rpx;
+    margin-right: 30rpx;
+    margin-top: 10rpx;
+}
+
+.fl-lf {
+    float: left;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    margin-top: 35rpx;
+}
+
+.mar-top1 {
+    margin-top: 14rpx;
+}
+
+.color {
+    color: #e65234;
+}
+
+.padding2 {
+    padding: 36rpx 26rpx;
+}
+
+.button2 {
+    padding: 6rpx 30rpx;
+    background: #fc4646;
+    border-radius: 10rpx;
+    color: #fff;
+}
+
+.button3 {
+    width: 160rpx;
+    height: 60rpx;
+    background: #f42837;
+    border-radius: 10rpx;
+    color: #fff;
+    line-height: 60rpx;
+}
+
+.font-size {
+    font-size: 34rpx;
+}
+
+.color-red {
+    color: #f42837;
+}
+
+.font1 {
+    font-size: 30rpx;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding-left: 16rpx;
+    padding-right: 10rpx;
+}
+
+.date {
+    width: 180rpx;
+    text-align: center;
+}
+
+.num {
+    text-align: center;
+}
+
+.result {
+    width: 210rpx;
+    text-align: center;
+    margin-right: 20rpx;
+}
+
+.font1 {
+    font-size: 30rpx;
+}
+
+.white-bg {
+    background-color: #fff;
+    margin-top: 20rpx;
+}

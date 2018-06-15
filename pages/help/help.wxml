@@ -1,0 +1,26 @@
+<view class="cont">
+    <view>
+        <text>1.功能介绍</text>
+        <text class="font1">
+据历史大数据规律为基础，提供N组追号计划参考，建议使用阶梯倍投方法投注，并实时统计追号成绩，如果连续5期没有成功则标记为未成功。
+</text>
+    </view>
+    <view class="mar-top">
+        <text>2.使用技巧</text>
+        <text class="font1">
+ 建议使用，阶梯倍投方式追号投注，因数据规律性和概率性问题，如超过5期未成功，不建议继续跟注号码。
+</text>
+    </view>
+    <view class="mar-top">
+        <text>3.免责声明</text>
+        <text class="font1">
+我们所提供的竞猜追号计划源自大数据统计分析，具有重要的投注参考意义，我们不承担信息的准确性责任，信息准确性的提高以及操作准确性的提高还要依托您对这些信息的二次筛选和确认，操作须谨慎，信息仅供参考。
+</text>
+        <view class="mar-top2">
+            <text class="font1">彩民依据程序提供的信息，进行彩票投注所造成的盈亏与本公司无关。</text>
+        </view>
+        <view class="mar-top2">
+            <text class="font1">彩票有风险，投注需谨慎，未满18周岁的青少年，禁止购买彩票。</text>
+        </view>
+    </view>
+</view>

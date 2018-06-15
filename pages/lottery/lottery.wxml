@@ -1,0 +1,39 @@
+<view class="swiper-tab">
+    <view bindtap="clickTab" class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2">全国彩</view>
+    <view bindtap="clickTab" class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3">高频彩</view>
+</view>
+<view class="cont" style="margin-top: 80rpx;">
+    <view hidden="{{currentTab!=2}}">
+        <view bindtap="goToInfo" class="mar" data-id="{{item.lottery_id}}" hover="true" hoverClass="news_list_click" wx:for="{{list}}" wx:key="id">
+            <view style="flex:1">
+                <view class="wrap">
+                    <view class="icon2 cp_{{item.id}}"></view>
+                    <view class="lf">{{item.name}}</view>
+                    <view class="rg font-1">{{item.qs}}期 {{item.time}}</view>
+                </view>
+                <view>
+                    <view class="num-{{item.color}}" wx:for="{{item.result}}" wx:key="">{{item.val}}</view>
+                </view>
+            </view>
+            <view class="weui-cell__ft"></view>
+        </view>
+    </view>
+    <view hidden="{{currentTab!=3}}">
+        <view bindtap="goToInfo" class="mar" data-id="{{item.lottery_id}}" hover="true" hoverClass="news_list_click" wx:for="{{list}}" wx:key="id">
+            <view style="flex:1">
+                <view class="wrap">
+                    <view class="icon2 cp_{{item.id}}"></view>
+                    <view class="lf">{{item.name}}</view>
+                    <view class="rg font-1">{{item.qs}}期 {{item.time}}</view>
+                </view>
+                <view>
+                    <view class="num-{{item.color}}" wx:for="{{item.result}}" wx:key="">{{item.val}}</view>
+                </view>
+            </view>
+            <view class="weui-cell__ft"></view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <text>开奖信息来源于官方公开数据</text>
+</view>

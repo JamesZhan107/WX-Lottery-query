@@ -1,0 +1,10 @@
+<view class="cont">
+    <view class="flex grey-bg">
+        <view class="flex1">充值时间</view>
+        <view class="flex1">充值积分</view>
+    </view>
+    <view class="flex border" wx:for="{{list}}" wx:key="id">
+        <view class="flex1 font1">{{item.p_time}}</view>
+        <view class="flex1 font1">{{item.money}}积分</view>
+    </view>
+</view>
